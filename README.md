@@ -15,15 +15,15 @@ This trading bot is built with clean architecture principles and includes:
 
 ## Features
 
-✅ Market and limit order placement
-✅ HMAC-SHA256 request signing
-✅ Comprehensive error handling
-✅ Full logging to file and console
-✅ Interactive CLI menu
-✅ Type hints and docstrings
-✅ Parameter validation
-✅ No hardcoded credentials
-✅ Float precision protection (amounts sent as strings)
+Market and limit order placement
+HMAC-SHA256 request signing
+Comprehensive error handling
+Full logging to file and console
+Interactive CLI menu
+Type hints and docstrings
+Parameter validation
+No hardcoded credentials
+Float precision protection (amounts sent as strings)
 
 ## Project Structure
 
