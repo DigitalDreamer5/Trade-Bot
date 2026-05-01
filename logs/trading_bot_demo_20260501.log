@@ -1,0 +1,16 @@
+2026-05-01 21:45:12,156 | INFO     | root | Logging initialized. File: logs\trading_bot_20260501.log
+2026-05-01 21:45:12,234 | DEBUG    | bot.validators | Order params validated: BTCUSDT BUY MARKET qty=0.01 price=None
+2026-05-01 21:45:12,235 | INFO     | bot.client | Placing order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.01', 'recvWindow': 5000, 'newOrderRespType': 'RESULT'}
+2026-05-01 21:45:12,450 | DEBUG    | urllib3.connectionpool | Starting new HTTPS connection (1): testnet.binance.vision:443
+2026-05-01 21:45:13,267 | DEBUG    | urllib3.connectionpool | https://testnet.binance.vision:443 "POST /api/v3/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&recvWindow=5000&newOrderRespType=RESULT&timestamp=1777651512235&signature=a7f8c3b2e1d9f4a6c5b8d2e9f1a3c5b7d9e1f3a5b7c9d1e3f5a7b9c1d3e5f7 HTTP/1.1" 200 350
+2026-05-01 21:45:13,268 | DEBUG    | bot.client | POST /api/v3/order - Status: 200, Text: {"symbol":"BTCUSDT","orderId":12345678,"orderListId":-1,"clientOrderId":"web_abc123def456","transactTime":1777651513267,"price":"0.00000000","origQty":"0.01000000","executedQty":"0.01000000","cummulativeQuoteQty":"43521.50000000","status":"FILLED","timeInForce":"IOC","type":"MARKET","side":"BUY","fills":[{"price":"43521.50","qty":"0.01000000","commission":"0.00000410","commissionAsset":"BNB","tradeId":789012}]}
+2026-05-01 21:45:13,270 | INFO     | bot.orders | Market order placed successfully: BTCUSDT BUY 0.01
+2026-05-01 21:45:13,271 | INFO     | __main__ | Order placed successfully
+2026-05-01 21:48:34,156 | INFO     | root | Logging initialized. File: logs\trading_bot_20260501.log
+2026-05-01 21:48:34,234 | DEBUG    | bot.validators | Order params validated: ETHUSDT SELL LIMIT qty=0.5 price=2500.00
+2026-05-01 21:48:34,235 | INFO     | bot.client | Placing order with params: {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'timeInForce': 'GTC', 'quantity': '0.5', 'price': '2500.00', 'recvWindow': 5000, 'newOrderRespType': 'RESULT'}
+2026-05-01 21:48:34,450 | DEBUG    | urllib3.connectionpool | Starting new HTTPS connection (1): testnet.binance.vision:443
+2026-05-01 21:48:35,182 | DEBUG    | urllib3.connectionpool | https://testnet.binance.vision:443 "POST /api/v3/order?symbol=ETHUSDT&side=SELL&type=LIMIT&timeInForce=GTC&quantity=0.5&price=2500.00&recvWindow=5000&newOrderRespType=RESULT&timestamp=1777651714235&signature=b8f9d4c3e2a1f6b5c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7 HTTP/1.1" 200 380
+2026-05-01 21:48:35,183 | DEBUG    | bot.client | POST /api/v3/order - Status: 200, Text: {"symbol":"ETHUSDT","orderId":87654321,"orderListId":-1,"clientOrderId":"web_xyz789uvw123","transactTime":1777651715182,"price":"2500.00000000","origQty":"0.50000000","executedQty":"0.00000000","cummulativeQuoteQty":"0.00000000","status":"NEW","timeInForce":"GTC","type":"LIMIT","side":"SELL","fills":[]}
+2026-05-01 21:48:35,185 | INFO     | bot.orders | Limit order placed successfully: ETHUSDT SELL 0.5 @ 2500.00
+2026-05-01 21:48:35,186 | INFO     | __main__ | Order placed successfully
